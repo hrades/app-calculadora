@@ -1,0 +1,165 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.wtdth, root.height
+    
+        TextInput:
+                id: calc_input
+                text: "0"
+                halign: "right"
+                font_size: 20
+                size_hint: (1., .15)
+                background_color: "b1b1b7"
+
+        GridLayout:
+                cols: 4
+                rows: 5
+
+                # linha 1
+                Button:
+                        text: ""
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                Button:
+                        text: "C"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.clear()
+                Button:
+                        text: "<<"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.delete()
+                Button:
+                        text: "/"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("/")
+                
+                # linha 2
+                Button:
+                        text: "7"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("7")
+                Button:
+                        text: "8"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("8")
+                Button:
+                        text: "9"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("9")
+                Button:
+                        text: "X"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("*")
+
+                # linha 3
+                Button:
+                        text: "4"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("4")
+                Button:
+                        text: "5"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("5")
+                Button:
+                        text: "6"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("6")
+                Button:
+                        text: "-"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("-")
+                
+                #linha 4
+                        Button:
+                        text: "1"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("1")
+                Button:
+                        text: "2"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("2")
+                Button:
+                        text: "3"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("3")
+                Button:
+                        text: "+"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("+")
+
+                # linha 5
+                Button:
+                        text: "+/-"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("+/-")
+                Button:
+                        text: "0"
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("0")
+                Button:
+                        text: "."
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar(".")
+                Button:
+                        text: "="
+                        halign: "center"
+                        font_size: 20
+                        size_hint: (.25, .20)
+                        background_color: "67676a"
+                        on_press: root.recebeCar("=")
